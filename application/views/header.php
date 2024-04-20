@@ -4,7 +4,7 @@
     <head>
         <link href="<?= site_url('asset/font/material-icon/material-icons.css'); ?>" rel="stylesheet">
         <link type="text/css" rel="stylesheet" href="<?= site_url('asset/css/materialize.min.css'); ?>" media="screen,projection"/>
-        <title>Sistem Multimedia</title>
+        <title>Sistem Multimedia - 50420221</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </head>
     <body>
@@ -13,7 +13,7 @@
         <div class="navbar-fixed">
             <nav>
                 <div class="nav-wrapper light-blue darken-4">
-                    <a href="<?= site_url(); ?>" class="brand-logo">Sistem Multimedia</a>
+                    <a href="<?= site_url(); ?>" class="brand-logo">Sistem Multimedia - 50420221</a>
                     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                     <ul class="right hide-on-med-and-down">
                         <li><a href="<?= base_url('Welcome/create'); ?>">Create</a></li>
