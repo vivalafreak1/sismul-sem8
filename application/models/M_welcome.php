@@ -20,6 +20,14 @@ class M_welcome extends CI_Model {
         'filename'=>$filename
     );
     $this->db->insert('post', $data);
-    
+    }
+
+    public function update($id) {
+        $data = array(
+            'name'=>$this->input->post('name', TRUE),
+            'description'=>$this->input->post('description', TRUE),
+        );
+        $this->db->where('id', $id);
+        $this->db->update('post', $data);
     }
 }
