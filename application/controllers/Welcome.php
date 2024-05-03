@@ -97,4 +97,30 @@ class Welcome extends CI_Controller {
 			}
 		}
 	}
+
+	public function delete($id = FALSE){
+		$post = $this->model->read($id);
+		$this->model->delete($id);
+		unlink('upload/post/'.$post->filename);
+		redirect();
+	}
+
+	public function deleteAll($id = FALSE){
+		$this->model->deleteAll();
+
+		$directory = './upload/post';
+
+		// Mendapatkan daftar semua file dalam direktori
+		$files = glob($directory . '/*');
+
+		// Menghapus setiap file
+		foreach ($files as $file) {
+			if (is_file($file)) {
+				unlink($file);
+			}
+		}
+
+		// Redirect atau tindakan lainnya setelah menghapus semua file
+		redirect();
+	}
 }

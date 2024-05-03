@@ -13,7 +13,7 @@
         <div class="navbar-fixed">
             <nav>
                 <div class="nav-wrapper light-blue darken-4">
-                    <a href="<?= site_url(); ?>" class="brand-logo">Sistem Multimedia - 50420221</a>
+                    <a href="<?= site_url(); ?>" class="brand-logo" style="padding-left: 50px">Sistem Multimedia - 50420221</a>
                     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                     <ul class="right hide-on-med-and-down">
                         <li><a href="<?= base_url('Welcome/create'); ?>">Create</a></li>
